@@ -35,4 +35,3 @@ console.log(numValue);
 
 const movieName= "Kartik calling Kartik";
 console.log(movieName);
-confirm
