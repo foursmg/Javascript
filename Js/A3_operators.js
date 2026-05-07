@@ -16,6 +16,8 @@ console.log("Division: "+a+"/"+b+"="+ (a/b));
 
 console.log("Remainder: "+a+"%"+b+"="+ (a%b));
 
+console.log("------------------------------");
+
 //increment Operator
 console.log(++a); //6
 console.log(a++); //6  but after printing 6 a has incremented to 7
@@ -27,9 +29,12 @@ console.log(--b); //0
 console.log(++b); //1
 console.log(++b);  //2
 
+console.log("-------------------------------------");
+
 //Exponentiation Operator:  a^b =  a**b 
 console.log("Exponenetiation(power): "+a+"**"+b+"="+(a**b));
 
+console.log("--------------------------------");
 
 //Asignment Operators
 
@@ -45,10 +50,14 @@ console.log("Remainder Assignment: "+(x %= 3)); //1.5
 console.log("Multiplication Assignment: "+(x*=8)); //12
 console.log("Exponenetiation Assignment: "+(x**=2));//144
 
+console.log("------------------------------");
+
 //Comparison Operator
 // equal to operator
 console.log("Equal to: 2 == 2 is", 2 == 2);
 
+
+//-------------------------------------------------
 // not equal operator
 console.log("Not equal to: 3 != 3 is", 3 != 3);
 
@@ -68,6 +77,19 @@ console.log(5 !== "5");   // true (different type)
 console.log(true !== 1);  // true
 console.log("Strictly not equal to: 2 !== '2' is", 2 !== '2');
 
+// equal Operator ==    vs     Strictly Equal Operator ===
+
+//Equal Operator(==) Compares value after type Conversion(type coercion) if the types are different
+var num1 = 54;    //integer
+var num2 = "54";  //String
+console.log(num1+"(Integer) == "+num2+"(String): "+(num1==num2));
+
+//Strictly equals === compares value and Data type, No type Conversion happens
+console.log(num1+"(Integer) === "+num2+"(String): "+(num1===num2));
+
+//--------------------------------------------------
+console.log("--------------------------------");
+
 // greater than operator
 console.log("Greater than: 3 > 3 is", 3 > 3);
 
@@ -80,6 +102,8 @@ console.log("Greater than or equal to: 3 >= 3 is", 3 >= 3);
 // less than or equal to operator
 console.log("Less than or equal to: 2 <= 2 is", 2 <= 2);
 
+
+console.log("--------------------------------");
 
 
 //Logical Operator

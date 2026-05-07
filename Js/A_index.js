@@ -1,4 +1,5 @@
 console.time('Tracking Time') //here tracking time is an identifier
+alert("This is an alert");  //creates popup
 console.log('Hello JavaScript');
 console.log("hii");
 console.log(1+2);
@@ -18,4 +19,7 @@ console.assert(24<18,'Age>18'); //Error
 // it does not stops execution or crash program -> Only Logs a message in console (for debugging)
 
 //console.error("This is an Error");
-//console.clear();
+//console.clear();   //clears the console
+
+//!!!!
+//document.body.innerHTML = 'Hello';   //this document.body.innerHTML replaces the page content
