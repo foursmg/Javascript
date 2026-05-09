@@ -7,13 +7,14 @@ let result;
 
 // convert number to string
 result = "3" + 2; 
-console.log(result, "-", typeof(result));
+console.log(result, "-", typeof(result)); //String
 
 result = "3" + true; 
-console.log(result, "-", typeof(result));
+console.log(result, "-", typeof(result));  //String
 
 result = "3" + null; 
-console.log(result, "-", typeof(result));
+console.log(result, "-", typeof(result));  //string
+// If any number is put inside quotes, the rest of the numbers will be treated as Strings, and concated.
 
 console.log("-----------");
 

@@ -3,6 +3,13 @@ alert("This is an alert");  //creates popup
 console.log('Hello JavaScript');
 console.log("hii");
 console.log(1+2);
+console.log("---------------------------");
+
+//When separated by semicolons, multiple statements on one line are allowed:
+var x= 2; y= 3; z=4;
+console.log((x*y)/z);
+
+console.log("---------------------------");
 console.log(3%2);
 console.log("Boolean "+ true);
 console.log([11,22,33,44,55]);

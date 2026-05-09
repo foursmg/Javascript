@@ -19,6 +19,12 @@ console.log(num);
 console.log(n);
 
 
+//Exponential Notation
+let val = 123e5;    
+console.log(val);    //12300000
+
+
+
 //BigInt 
 //A BigInt number is created by appending n to the end of an integer.
 //ex: 1244453423624523543n;
@@ -69,6 +75,9 @@ let employee ={
 console.log(employee);
 //for table view
 console.table(employee);
+
+
+
 
 
 

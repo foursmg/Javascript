@@ -6,6 +6,8 @@
 let a= 5;
 var b= 2;
 
+// 5 + 2; here  Operand-> 5,2;   Operator -> +
+
 console.log("Addition: "+a+"+"+b+"="+ (a+b));
 
 console.log("Subtraction: "+a+"-"+b+"="+ (a-b));
@@ -15,6 +17,15 @@ console.log("Multiplication: "+a+"*"+b+"="+ (a*b));
 console.log("Division: "+a+"/"+b+"="+ (a/b));
 
 console.log("Remainder: "+a+"%"+b+"="+ (a%b));
+
+console.log("------------------------------");
+
+
+//String Addition
+let fname = "john";
+var lname = 'doe';
+var name = fname + " "+ lname;
+console.log(name);
 
 console.log("------------------------------");
 
@@ -87,8 +98,8 @@ console.log(num1+"(Integer) == "+num2+"(String): "+(num1==num2));
 //Strictly equals === compares value and Data type, No type Conversion happens
 console.log(num1+"(Integer) === "+num2+"(String): "+(num1===num2));
 
-//--------------------------------------------------
 console.log("--------------------------------");
+
 
 // greater than operator
 console.log("Greater than: 3 > 3 is", 3 > 3);
@@ -101,6 +112,19 @@ console.log("Greater than or equal to: 3 >= 3 is", 3 >= 3);
 
 // less than or equal to operator
 console.log("Less than or equal to: 2 <= 2 is", 2 <= 2);
+
+//String Comparison
+let text1 = "A";
+let text2 = "B";
+let result = text1< text2; // true, Strings are compare alphabetically 
+console.log(result);
+
+let Num1= 34;
+let Num2 = 43;
+result = Num1>Num2;
+console.log(Num1>Num2);   //false;
+
+
 
 
 console.log("--------------------------------");
@@ -120,3 +144,25 @@ console.log((xx > 3) || (xx < 0));  // false
 // logical NOT
 console.log(!(xx == 3));  // false
 console.log(!(xx < 2));  // true
+
+{
+    let a = 2, b=3;
+    let AND = a&b;
+    console.log(AND); //2
+
+    let OR = a|b;
+    console.log(OR);  //3
+
+    let NOT = ~a;
+    console.log(NOT);
+    
+}
+
+{
+    let number = 56;
+    if((number&1)==1){
+        console.log(number+" is Odd Number.");
+    }else{
+        console.log(number+" is even Number.");
+    }
+}
