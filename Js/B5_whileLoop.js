@@ -19,7 +19,9 @@ while(num>=0){
 }
 console.log("Sum of all the positive number entered: "+sum);
 
-console.log("-----------------");
+
+console.log("----------------------------------------------");
+
 
 //do-while loop
 //Display Number from 3 to 1

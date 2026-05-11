@@ -4,10 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Js</title>
+    <style>
+        *{
+            margin: 5px;
+        }
+    </style>
    
 </head>
 <body>    
     <h1>Learning Javascript</h1>
-    <script src="/Js/A3_operators.js"></script>
+    
+
+
+    <div style="border: 5px solid tomato; padding: 10px;">
+        <h2>Math.random()</h2>
+        <p>Click to Visit Random Site</p>
+    <button type="button" onclick="randomlink()">Click here!</button> <br>
+    <b>B1_ifElse.js</b>
+    </div>
+
+
+    <div style="border: 5px solid tomato; padding: 10px;">
+        <b>B2_forLoop</b>
+        <p id="demo"></p>
+    </div>
+
+    <p style="border: 2px solid red;">Keep the &lt;script> to the <b>bottom of body</b>
+    <br>The Browser reads top to bottom, So when this line <i>document.getElementById("demo").innerHTML = text;</i>
+     runs, the browser hasn't created <i>demo</i> yet -> returns <i>null</i> </p>
+
+
+     <div style="border: 5px solid green; padding: 10px;">
+       <B>B2_forLoop</B>
+        <p id="car"></p>
+     </div>
+
+
+
+    <script src="/Js/B9_Loop_Questions.js"></script>
 </body>
 </html>
