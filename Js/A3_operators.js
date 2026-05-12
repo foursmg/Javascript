@@ -145,6 +145,8 @@ console.log((xx > 3) || (xx < 0));  // false
 console.log(!(xx == 3));  // false
 console.log(!(xx < 2));  // true
 
+console.log("---------------------------------");
+
 {
     let a = 2, b=3;
     let AND = a&b;
@@ -154,7 +156,16 @@ console.log(!(xx < 2));  // true
     console.log(OR);  //3
 
     let NOT = ~a;
-    console.log(NOT);
+    console.log(NOT);  // -3
+
+    let XOR = a^b;
+    console.log(XOR);   // 1
+
+    let lshift = a<<1;
+    console.log(lshift);  // 4
+
+    let rshift = a>>1;
+    console.log(rshift);   // 1
     
 }
 
