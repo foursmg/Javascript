@@ -14,7 +14,10 @@ greet();
 const hello = () => {
     console.log("Hello, This is arrow Function.");
 }
-
+// Array function is this part () => {
+//   console.log("Hello, This is arrow Function.");
+//} 
+// const hello is just a variable which stores Array function
 
 console.log("---------------------------------");
 

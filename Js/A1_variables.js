@@ -158,3 +158,26 @@ let and const are not hoisted.
 
 
 */ 
+
+
+
+//Strict Mode - "use strict"
+//Strict Mode in java is a way to make JS run with Stricter rules.
+//It helps catch mistakes that normal Js Silently ignores.
+// Enable by writing "use strict";
+"use strict"
+//Usually at the top of the file or function
+
+/*
+As an example, in normal JavaScript, mistyping a variable name creates a new global variable. In strict mode, this will throw an error, 
+making it impossible to accidentally create a global variable.
+
+In normal JavaScript, a developer will not receive any error feedback assigning values to non-writable properties.
+
+In strict mode, any assignment to a non-writable property, a getter-only property, a non-existing property, a non-existing variable, or a non-existing object, will throw an error.
+
+In Strict mode: 
+x=3.14; not allowed; -> This will cause error -> Reason variable not declared
+
+
+*/
