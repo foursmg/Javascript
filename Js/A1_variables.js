@@ -6,7 +6,7 @@
 
 var num;             //variable declared, here num is identifiers
 num=21;             //variable Initialize
-console.log(num);  //23
+console.log(num);  //21
 
 var number = 231;
 console.log(number);   //231
@@ -165,7 +165,7 @@ let and const are not hoisted.
 //Strict Mode in java is a way to make JS run with Stricter rules.
 //It helps catch mistakes that normal Js Silently ignores.
 // Enable by writing "use strict";
-"use strict"
+//"use strict"
 //Usually at the top of the file or function
 
 /*
