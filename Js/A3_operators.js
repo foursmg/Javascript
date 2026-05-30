@@ -18,7 +18,16 @@ console.log("Division: "+a+"/"+b+"="+ (a/b));
 
 console.log("Remainder: "+a+"%"+b+"="+ (a%b));
 
-console.log("------------------------------");
+console.log("--------------BODMAS----------------");
+//BODMAS
+// B = Bracket = ()
+// O = Order = x^2, x^(1/2)
+// D = Division = /
+// M = Multiply = *
+// A = Add = +
+// S = Substract = -
+console.log(20+10-10/2*20); // first division, then multiplication, then Addition then Substraction.
+
 
 
 //String Addition

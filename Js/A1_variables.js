@@ -13,6 +13,17 @@ console.log(number);   //231
 number = 75;
 console.log(number);   //75
 
+console.log("--------------------------------");
+{
+    let x = 34, y = 76;  //can declare like this also
+    console.log(x+y); 
+}
+{
+    let a = 34; let b = 43;
+    console.log(a+b);
+}
+
+console.log("============================================");
 
 var name = "Kartik";
 console.log(name);
@@ -22,6 +33,7 @@ console.log(quote);
 
 //Rules for Naming Varibale
 //Variable name must start with -> a letter, an underscore(_), or dollor sign($).
+//No Special Character other than _ and $.
 //Variables are case Sensitive ->  Num and num Both are different variable
 // !! Variable cannot start with a number.
 //Varibale names cannot be keywords.

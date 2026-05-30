@@ -8,6 +8,28 @@
         *{
             margin: 5px;
         }
+        h1{
+            color: green;
+        }
+
+        /*Practice 1*/
+        #bag{
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 20px;
+            background-color: greenyellow;
+            padding: 5px 18px;   /*padding: top-bottom left-right;*/
+            color:green;
+            border: none;
+        }
+        .wishlist{
+            border: 3px solid black;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 10px;
+            padding: 5px 35px;
+            background-color: aqua;
+        }
     </style>
    
 </head>
@@ -45,13 +67,50 @@
         <p id="ObjectDisplay"></p>
      </div>
 
+
      <div style="border: 5px solid blue;">
         <b>G1_Dates</b>
         <p id="date"></p>
      </div>
 
 
+     <hr>
+     <h2 style="color: violet;">Buttons</h2>
+
+     <div>
+        <p>Alert Button</p>
+        <button id="button1" onclick="alert('This is a alert button (custom)')">Click Here</button>
+     </div>
+
+    <!--    Practice 1     --> 
+    <hr>
+    <p><b>Z1.Practice.js</b></p>
+    <button id="bag" onclick="alert('Item Has Been Added To Cart')">Add to Bag</button>
+    <button class="wishlist" onclick="alert('Added to Wishlist')">❤️WISHLIST</button>
+
+
 
     <script src="/Js/A1_variables.js"></script>
 </body>
 </html>
+
+<!--  # -> Id selector, used only once in entire page  -->
+<!--  . -> Class Selector, can be used multiple times.   -->  
+
+<!--   getElementById: Finds one element y its ID.-->
+<!--   getElementsByClassName: Finds element by thier class, returns a list.   -->
+<!--   querySelector: Finds the first element that matches a CSS selector.  -->
+<!--   purpose: To interact with or modify webpage element.  -->         
+<!--
+   <script>
+        console.log(' Hello ');
+    </script>
+    we can write Js code like this also, But once src attribute is used 
+    the code written inside that same tag is ignored by the browser.
+    
+     <script src="/Js/z.js">
+        console.log(' Hello ');
+    </script>
+    here in this case The console.log(' Hello '); part is ignored
+
+    -->      

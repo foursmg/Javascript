@@ -15,8 +15,15 @@ console.log("Boolean "+ true);
 console.log([11,22,33,44,55]);
 console.log({Bike: "Honda", Model: 650});
 console.table({Bike: "Honda", Model: 650});
+
+console.log("----------------------------------");
+
 console.warn("Warning!!!");
 console.timeEnd('Tracking Time');
+
+console.log("------------Change element of the page Using document.body.innerHTML----------");
+document.body.innerHTML = 'Using <b>document.body.innerHTML =" "<b>'
+
 
 console.assert(24>18, 'Age > 18 Means Vote!!!'); //No error Nothing
 console.assert(24<18,'Age>18'); //Error

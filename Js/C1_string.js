@@ -46,7 +46,7 @@ console.log(name1== name3); //true, When == compares different types, JavaScript
                             // Now Comparison becomes String == String 
 
 console.log(name1===name3); //false, === does NO type conversion, It checks exact type first. 
-                            //compare: name1-Primitive, name2-Object -> Different types -> false
+                            //compare: name1-Primitive, name3-Object -> Different types -> false
 //for Objects, === also checks for reference identity.
 let name4 = new String("john");
 console.log(name3==name4);   //false, compares Object references

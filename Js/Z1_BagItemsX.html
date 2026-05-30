@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bag Items</title>
+        <style>
+            *{
+                font-size:x-large;
+            }
+            #cart,#item2{
+                background-color:coral;
+                border-radius: 10px;
+                padding: 8px 15px;
+                border: none;
+                margin:5px;
+                box-shadow: 2px 2px 10px gray;  /* x-offset | y=offset | blur | color  */
+                cursor: pointer;
+                            
+                
+            }
+            #wishlist{
+                background-color: white;
+                padding: 8px 15px;
+                border-radius: 5px;
+                cursor:pointer;
+                background-color: violet;
+            }
+
+            /* for Hover Highlight on wishlist */
+            #wishlist:hover{
+                filter:brightness(1.20);
+            }
+
+            /* for Hover Highlight on Cart Button */
+            #cart{
+                 transition: transform 0.2s ease;
+            }
+            #cart:hover{
+                 transform: scale(1.03); /* Increases size by 5% */
+            }
+            #item2:hover{
+                 box-shadow: 0 0 10px rgb(31, 79, 210);  
+            }
+            
+
+        </style> 
+    </head>
+    <body>
+        <h1>Myntra Bag Exercise - Practice 2</h1>
+        <div><button id="cart" onclick="cart()">Add to Cart</button>
+        <button id="wishlist" onclick="wishlist()">Move To Wishlist</button>
+        <button id="item2" onclick="item2()">Add 1+1 sale item</button></div>
+        <p id="nCartItem" style="font-size:30px";>Your Bag Has 0 Items</p>
+        <script src="/Js/Z1.Practice.js"></script>
+    </body>
+</html>
+
+<!--  
+cursor: pointer; changes the mouse cursor to a hand icon when the user hovers over an element.
+Other Common Cursor Values : -> default (normal arrow), pointer (Hand), test(I-beam for text), wait(Loading/spinner), not-allowed(Prohibited sign)...
+
+-->

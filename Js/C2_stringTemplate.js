@@ -26,3 +26,7 @@ Telling lies?
 Open your mouth
 (Ah, ah, ah)`);
 
+console.log("-------(String Concatenation)------------")
+
+console.log("hello "+1+1+1+" world") // When String is involeved. + becomes String concatenation
+console.log("Hello "+(1+1+1)+" World.")  // Here Parentheses forces arithmetic firt
