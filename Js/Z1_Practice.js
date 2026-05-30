@@ -1,6 +1,6 @@
-let value =0;
+let value = 0;
 function updateBag(){
-    document.getElementById('nCartItem').innerHTML = `Your Bag has ${value} items`
+    document.querySelector("#nCartItem").innerText = `Your Bag Has ${value} items`;
 }
 function cart(){
     value++;
@@ -22,6 +22,37 @@ function item2(){
 
 
 
+
+
+
+
+
+/*
+
+Using document.getElementById().innerHTML = 'text....'
+
+let value =0;
+function updateBag(){
+    document.getElementById('nCartItem').innerHTML = `Your Bag has ${value} items`
+}
+function cart(){
+    value++;
+    updateBag();
+}
+function wishlist(){
+    if(value>0){
+        value--;
+    }
+    updateBag();
+}
+function item2(){
+    value += 2;
+    updateBag();
+}
+
+
+
+*/
 
 
 /*
