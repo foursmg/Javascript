@@ -44,3 +44,8 @@ false Example:  let x = 0; let x = -0;  let x = "";   let x(The Boolean value of
 
 
 */
+
+//Comparison Operator returns true/false
+console.log(6>7); //false
+console.log(7>6);  //true
+console.log(typeof(12<9)); //boolean

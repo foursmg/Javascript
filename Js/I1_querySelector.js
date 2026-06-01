@@ -45,5 +45,6 @@ document.querySelector("#h3line4").style.backgroundColor= "limegreen";
 
 
 console.log("----Reading Input Value - d.qS('').value;------")
+
 let firstName = document.querySelector('#fname').value;
 console.log(firstName);

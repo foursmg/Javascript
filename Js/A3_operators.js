@@ -70,14 +70,32 @@ console.log("Remainder Assignment: "+(x %= 3)); //1.5
 console.log("Multiplication Assignment: "+(x*=8)); //12
 console.log("Exponenetiation Assignment: "+(x**=2));//144
 
-console.log("------------------------------");
+console.log("---------------(== & ===)---------------");
 
 //Comparison Operator
 // equal to operator
-console.log("Equal to: 2 == 2 is", 2 == 2);
+console.log("Equal to: 2 == 2 is", 2 == 2);  //true
 
+console.log("");
 
-//-------------------------------------------------
+// == compares values after type conversion (automatic type conversion also called type coercion).
+console.log(5==5);  //true
+console.log(5==5.0);  //true
+console.log(5=='5');  //true
+console.log(5=='5.0');  //true
+
+console.log("");
+
+//=== compares value without type conversion, checks (i)Same Type (ii)Same values
+//Prefer ===
+console.log(5===5);  //true
+console.log(5=== '5');  //false
+console.log(5==5.0);    //true
+console.log(5==='5.0');  //false
+
+console.log("");
+
+//----------------------------------------------
 // not equal operator
 console.log("Not equal to: 3 != 3 is", 3 != 3);
 
@@ -87,6 +105,40 @@ console.log(5 === 5);     // true
 console.log(5 === "5");   // false (number ≠ string)
 console.log(true === 1);  // false
 console.log("Strictly equal to: 2 === '2' is", 2 === '2');
+
+
+//String Primitive - string Objects;  
+
+//Primitives are compared by value
+//Objects are compared by reference
+
+// == compares values after type conversion (automatic type conversion also called type coercion).
+// === compares value without type conversion, checks (i)Same Type (ii)Same values
+//Prefer ===
+
+//String as Object  - Comapring two objects return false;
+let name1 = "john";   //String primitive 
+let name2 = "john";   //Also a String Primitive  
+let name3 = new String("john");   //String Object
+
+//primitives are compared by values
+console.log(name1==name2);  //true,  Both are primitive strings with same value
+console.log(name1 === name2); //true,  === check (i) Same Type?, (ii) Same value?; here both string and value john same -> true
+//!!
+console.log(name1== name3); //true, When == compares different types, JavaScript tries type coercion.
+                            //It converts the String object to primitive
+                            // Now Comparison becomes String == String 
+
+console.log(name1===name3); //false, === does NO type conversion, It checks exact type first. 
+                            //compare: name1-Primitive, name3-Object -> Different types -> false
+//for Objects, === also checks for reference identity.
+let name4 = new String("john");
+console.log(name3==name4);   //false, compares Object references
+console.log(name3===name4);  //false, Also checks reference identity
+
+
+                            
+
 
 // strictly not equal to operator
 //Opposite of ===
@@ -106,6 +158,7 @@ console.log(num1+"(Integer) == "+num2+"(String): "+(num1==num2));
 
 //Strictly equals === compares value and Data type, No type Conversion happens
 console.log(num1+"(Integer) === "+num2+"(String): "+(num1===num2));
+
 
 console.log("--------------------------------");
 

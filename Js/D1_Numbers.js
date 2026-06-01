@@ -124,6 +124,16 @@ console.log(" ");
 
 
 
+console.log("---------------eval()----------------");
+
+//eval() , generally discouraged
+// eval() is a built-in function that executes a string as code.
+// Styntax - eval(string)
+let arith = "2*3+6-5";
+console.log(arith); // 2*3+6-5
+console.log(eval(arith));  // 7
+
+
 
 
 
