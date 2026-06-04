@@ -75,7 +75,7 @@ console.log("---------------------------------");
 // Arguments are the REAL VALUES Passed to, and Received By the function.
 
 
-//Default Parameter Values
+//***Default Parameter Values
 //In Js function can have default values, The default value is used if no argument is provided.
 function add(a,b=10){  //default value of b only be used when b argument is not provided by calling function
     return a+b;
@@ -88,6 +88,28 @@ console.log(add(3,4));  //7
 // If a Function is called with fewer arguments than parameters, the missing values become undefined.
 
 console.log("---------------------------");
+
+function randomNumber(){
+    let rNum = Math.random();
+    console.log("Random Number is: "+rNum);
+    console.log("Random Number is: "+rNum*100);
+
+    // Math.trunc(x) : Discards the fraction. Works perfectly for both positive and negative numbers.
+    console.log("Random Number is: "+Math.trunc(rNum*100));
+
+    //Math.floor(x): Rounds down toward the next lower integer.
+    console.log("Random Number is: "+Math.floor(rNum*100));
+
+    //Math.ceil(x): Rounds up toward the next higher integer.
+    console.log("Random Number is: "+Math.ceil(rNum*100));
+
+    // Math.round(x): Rounds to the nearest whole integer.
+    console.log("Random Number is: "+Math.round(rNum*100))
+}
+randomNumber();
+
+
+console.log("-------------------------------------------------");
 
 
 // Recursion function for factorial

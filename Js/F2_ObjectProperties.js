@@ -1,7 +1,7 @@
 // Object Properties
-//Properties are key:value Pairs
+// Properties are key:value Pairs
 // A Javascript Object is collection of peroperties
-//Properties can be changed, added, and deleted.
+// Properties can be changed, added, and deleted.
 
 //Accessing Properties
 const info = {
@@ -19,7 +19,7 @@ console.log(info.fname+" "+info.lname);   //Steve Smith
 
 // Accessing properties using Bracket Notation
 console.log(info["empId"]);  //234
-//Brackey Notation is useful when the property name is stored in a variable.
+//Bracket Notation is useful when the property name is stored in a variable.
 
 let n1 = "fname";
 let n2 = "lname";
