@@ -44,7 +44,7 @@ if(year%400==0){
     console.log(year+" is Not a Leap Year.");
 }
 
-console.log("---------------------------------");
+console.log("-----------------(Ternary Operator)----------------");
 
 //Ternary Operator
 // (condition) ? expression1 : expression2
@@ -54,6 +54,13 @@ let value = num>0? "Positive": num==0? "Zero!": "Negative";
 console.log(value);
 
 console.log("-----------------------------------");
+
+//Guard Operator
+// Syntax - value||default
+let personName = 'John';
+console.log(personName|| 'Unknown');  //John
+personName = "";
+console.log(personName|| 'Unknown');  //Unknown
 
 //!!!!!!
 //Random link on click

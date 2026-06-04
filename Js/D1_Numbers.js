@@ -87,7 +87,7 @@ console.log(" ");
     console.log(x+y);   //5020
 }
 
-console.log(" ");
+console.log("----------------(NaN)--------------------- ");
 
 
 // NaN - Not a Number
@@ -101,15 +101,27 @@ console.log(" ");
     console.log(x/y); //NaN
     console.log(x-y); //NaN
     console.log(x*y);  //NaN
+    console.log(Number("abc"));  //NaN
+    console.log(0/0); // NaN
 }
+
+console.log("______________________(isNaN)____________________");
 
 // isNaN() global Javascript function - used to find out if a value is not a number;
 {
     let x=100;
     let y ="Apple";
     let product = x*y;
+    console.log(product);  //NaN
     console.log(isNaN(product)); // true
     console.log(typeof(product));  //number ->  typeof NaN returns number;
+    console.log(isNaN(23)); //false
+    
+    // isNaN() tries to convert argumnet to a number before checking it.
+    console.log(isNaN("hello"));  //true  -> Internally Number("hello") -> NaN
+                                  //Since Conversion results in NaN -> isNaN(NaN) -> true
+    console.log(isNaN("87"));     //false  -> internally Number("87") -> 87 -> since 87 is a valid number -> output -> false
+    console.log(isNaN("")); //false -> Number("") -> 0
 }
 
 console.log(" ");
