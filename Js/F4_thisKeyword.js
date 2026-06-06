@@ -14,6 +14,7 @@ const person = {
 const name = person.fullName();
 console.log(name);
 
+console.log("_________")
 
 //the 'this' keyword makes it possible to use same method with different objects.
 const person1 = {
@@ -36,6 +37,8 @@ console.log(hello1);
 let hello2 = person2.hello();
 console.log(hello2);
 
+console.log('--------------');
+
 //this alone
 //In a Browser, the global object is the window objet
 let x = this;
@@ -55,8 +58,8 @@ console.log("-----------------(function Overwrite)------------------")
 
 
 let myF1 = functionX();
-console.log(myF1); //When two function with same name get called
-//Js Function declaration is Hoisted.
+console.log(myF1);   //When two function with same name get called
+                     //Js Function declaration is Hoisted.
 
 
 function functionX(){

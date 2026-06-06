@@ -59,5 +59,20 @@ console.log(info.FullName());  //john Doe
 // Objects, Maths, Dates, Arrays, Maps, Sets, RegExp, Errors
 //All Js values, Except primitives, are Objects.
 
+console.log("------------(AutoBoxing)----------------")
 
+// AutoBoxing
+// Autoboxing is JavaScript's automatic wrapping of primitive values in temporary object wrappers (such as String, Number, or Boolean) 
+// so that methods and properties can be accessed on those primitive values.
+
+// Js Primitives
+// string, number, boolean, bigint, symbol, null, undefined
+
+let line = 'Mango is a summar fruit.';
+console.log(line.length);   // 22
+console.log(line.toUpperCase()); // MANGO IS SUMMAR FRUIT.
+
+//Temporarily Js does something like this
+// let temp = new String('Mango is a summar fruit');
+// temp.toUpperCase();
 

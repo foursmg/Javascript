@@ -86,7 +86,60 @@ console.log(person.cars);   //{car1: 'Honda City', car2: 'Tata Safari', car3: 'T
 console.log(person.cars.car1);    //Honda City
 
 
+console.log("-----------(Object Reference)-----------------")
+
+/*
+
+Objects are stored by reference, not by value.
+
+When you assign an object to another variable, both variables point to the same object in memory.
+
+*/
+
+let person1 = {
+    name: 'Kelly',
+    age : 4,
+};
+
+let person2 = person1;
+
+person2.age = 43;
+console.log(person1.age);   //43
+console.log(person2.age);   //43   //Both variable referes to the same variable
 
 
+// comparing two objects
+
+let obj1 = { num: 32};
+let obj2 = { num: 32};
+
+console.log(obj1==obj2);    //false
+console.log(obj1===obj2);   //false    // Even though content is same Both are different varibale
+
+// Same reference
+
+let Object1 = { num: 32};
+let Object2 = Object1;
+
+console.log(Object1==Object2);   //true
+console.log(Object1==Object2);   //true   //because both varibale is pointing to same object
 
 
+console.log("-----------(Arrays are Objects too)-----------------");
+
+let arr1 = [1,2,3];
+let arr2 = arr1;
+arr2.push(55);
+
+console.log(arr1);   // [1,2,3,55]
+console.log(arr2);   // [1,2,3,55]
+
+//Craeting a copy of an array instead
+
+let nums1 = [11,22,33,44];
+let nums2 = [...nums1];
+
+nums2.push(89);
+
+console.log(nums1);  //[11, 22, 33, 44]
+console.log(nums2);  // [11, 22, 33, 44, 89]
