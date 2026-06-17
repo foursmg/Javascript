@@ -12,6 +12,18 @@ Syntax for creating an array
 const array_name = [item1, item2, item3......];
 
 */
+console.log("_____________Array____________");
+//Creating an array
+let arr = [1,2.32,34,5,"delhi",7,70];
+console.log(arr); //displaying an array
+arr[0] = 222; // changing an array
+console.log(arr);
+arr[7] = 32;    //Adding an element using index number
+console.log(arr);
+console.log(arr[7]);
+console.log(arr[8]);  //undefined
+console.log(typeof(arr));   //object // Type Of Array is Object
+
 console.log("---------------(Creating an Array)--------------")
 
 const cars = ["Volvo","Honda","Toyota","Kia","Ford","Hyundai"];
@@ -34,14 +46,14 @@ const bikes = new Array("Yamaha","Honda","Triumph","Suzuki","Jawa");
 
 
 //Arrays containing Different data type
-const arr1 = ["Rose",30,"Bicycle",3.231,true,1234567890n,undefined,null];
-console.log("Arrays With different Data types: "+arr1);  // (8) ['Rose', 30, 'Bicycle', 3.231, true, 1234567890n, undefined, null]
+const arr1 = ["Rose",30,"Bicycle",3.231,true,1234567890n,undefined,null,{likes: '1 Million'}];
+console.log("Arrays With different Data types: "+arr1);  // (8) 'Rose', 30, 'Bicycle', 3.231, true, 1234567890,,,[object Object]
 
 
 console.log("----------------(Accessing Array Elements)--------------------");
 
 console.log(cars[0]);  //Volvo  //Accessing 1st element with index 0
-console.log(cars[cars.length-1]); // Accessing last element with .length-1
+console.log(cars[cars.length-1]); // Hyundai // Accessing last element with .length-1
 console.log(cars[3]); //Kia
 
 
@@ -74,6 +86,15 @@ console.log("------------------(Arrays are Object)-------");
 console.log(typeof(cars)); //object
 //Arrays are a special type of objects. The typeof operator in JavaScript returns "object" for arrays.
 //But, JavaScript arrays are best described as arrays.
+
+
+console.log("");
+console.log("-Array Also uses Reference like Object_______________");
+let nusm1 = [11,22,32,35,11,560];
+let nums2 = nusm1;
+nums2[0] = 333;
+console.log(nums2);  // (6) [333, 22, 32, 35, 11, 560]
+console.log(nums2);  // (6) [333, 22, 32, 35, 11, 560]
 
 //Object uses names to access its "members".
 const person = {

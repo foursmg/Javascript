@@ -35,7 +35,7 @@ console.log(country);   //England
 console.log(person.country); //undefined
 
 
-console.log("(Nested Object Destructuring)--------------------");
+console.log("---------(Nested Object Destructuring)--------------------");
 
 let student = {
     name : 'Aman',

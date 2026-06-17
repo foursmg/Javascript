@@ -1,17 +1,33 @@
 //Array Methods
 
+
+console.log("_________length of an Array: arr.length_______");
 //Array Length
 //The length property returns the lenght(size) of an array.
 let city = ["Jaipur","Puri","Itanagar","Gangtok","Rajgir"];
 console.log(city);          //(5) ['Jaipur', 'Puri', 'Itanagar', 'Gangtok', 'Rajgir']
 console.log(city.length);  //5
 
+console.log("");
+console.log("_______Array to String: arr.toString()________");
 //Array toString()
 //The toString() method returns the elements of an array as a comma separated string.
 //Every JavaScript object has a toString() method.
 //The toString() method is used internally by JavaScript when an object needs to be displayed as a text (like in HTML), or when an object needs to be used as a string.
 console.log(city.toString());  //Jaipur,Puri,Itanagar,Gangtok,Rajgir
 
+
+console.log("");
+console.log("------------- arr.sort(): Sorts the array------------ ");
+// Js compares numbers as String, the sort them alphabetically (lexicographically)
+let nums = [5,42,6,88,5,99,32,13,77,9];
+nums.sort();
+console.log(nums);  // (10) [13, 32, 42, 5, 5, 6, 77, 88, 9, 99]
+
+//ValueOf(): get array itself
+
+console.log("");
+console.log("-------Array at(): arr.at[]----------- ");
 // Array at()
 // the at() method returns an indexed element from an array
 //the at() method returns the same as [].
@@ -20,13 +36,16 @@ console.log(city.at(0));  //Jaipur
 console.log(city.at(-1));  //Rajgir
 console.log(city[-1]);    //undefined
 
-
+console.log("");
+console.log("-----------Array Join(): arr.join('(separator eg.: *, #, -...)')")
 //Array join()
 //The join() method also joins all array elements into a string.
 // Works same as toString, in addition we can specify the separator
 console.log(city.join(" # "));  //Jaipur # Puri # Itanagar # Gangtok # Rajgir
 
 
+console.log("");
+console.log("________arr.pop(): removes last element______")
 //pop()
 //The pop() method removes the last element from an array
 city.pop();
@@ -36,6 +55,10 @@ let popedCity = city.pop();
 console.log(popedCity); //Gangtok
 console.log(city);  // (3) ['Jaipur', 'Puri', 'Itanagar']
 
+
+
+console.log("");
+console.log("_________ push(): add new element at the end____________");
 //push()
 //The push() method adds a new element to an array(at the end).
 city.push("Darjaling");
@@ -44,6 +67,9 @@ console.log(city);  // (4) ['Jaipur', 'Puri', 'Itanagar', 'Darjaling']
 let pushedCity = city.push("Delhi");
 console.log(pushedCity); //5
 
+
+console.log("");
+console.log("--------------- arr.shift(): remove first element and Move other elements to lower index_______ ");
 //Shifting Elements
 //Shifting is equivalent to popping, but working on the first element instead of the last.
 //The shift() method removes the first array element and "shifts" all other elements to a lower index.
@@ -54,6 +80,10 @@ let shiftedCity = city.shift();
 console.log(shiftedCity);  //puri
 console.log(city);    // (3) ['Itanagar', 'Darjaling', 'Delhi']
 
+
+
+console.log("");
+console.log("_________ arr.unshift(): add element at begining_________")
 //Unshift()
 // The unshift() method adds a new element to an array (at the beginning), and "unshifts" older elements
 let unshiftCity = city.unshift("Ranchi");
@@ -68,9 +98,10 @@ console.log(city);  //(5) ['Ranchi', 'Itanagar', 'Darjaling', 'Delhi', 'Kanpur'
 // Use pop() or shift() instead
 // delete city[0];
 
+
+
 console.log("");
 console.log("---------------(Merging Arrays(Concatenating))-------------");
-
 // concat()
 //The concat() method creates a new array by merging (concatenating) existing arrays
 const capitals = ["Panji","Gandhinagar","Shimla"];
@@ -112,9 +143,15 @@ console.log(myArr1);     // (6) [1, 2, 3, 4, 5, 6]
 const newArr1 = myArr.flatMap(x => [x, x * 10]);
 console.log(newArr1);
 
-
+console.log("");
+console.log("------------splice(): Romve elememts from array __________");
 // splice()
 //  The splice() method can be used to add new items to an array
+let bikes = ["apache",'tracker 400','390R',"CB650R"];
+console.log(bikes);
+bikes.splice(1,2);
+console.log(bikes);
+
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.splice(2, 0, "Lemon", "Kiwi");
 console.log(fruits);  //(6) ['Banana', 'Orange', 'Lemon', 'Kiwi', 'Apple', 'Mango']

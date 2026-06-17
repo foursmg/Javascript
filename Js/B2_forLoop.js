@@ -9,7 +9,7 @@ for(let i=0; i<n;i++){
 
 console.log("---------------------------------------");
 
-//Dsiplay Sum of n Natural Numbers
+//Display Sum of n Natural Numbers
 let num=5;
 var i;
 var sum=0;

@@ -33,10 +33,18 @@ console.log("--------------------");
 
 {
     let d = new Date();
+    console.log(d);                 // Sat Jun 13 2026 14:49:27 GMT+0530 (India Standard Time)
+    //rest of the method below like .getime(), .getHours() etc will extract that particular data from above data object
+    
+    console.log(d.getTime());       // 1781342367880, getTime() returns the number of milliseconds since January 1, 1970, 00:00:00 UTC  
     console.log(d.getFullYear());  //2026
     console.log(d.getMonth());    //4
-    console.log(d.getHours());    //23
     console.log(d.getDay());      //5
+    console.log(d.getHours());    //23
+    console.log(d.getMinutes());  //53
+    console.log(d.getSeconds());  //31
+    console.log(d.getMilliseconds());  // 624
+    
     //day also follows 0 indexing
     // 0-> sunday, 1->Monday, 2->tuesday, ....., 6->Saturday
 }
