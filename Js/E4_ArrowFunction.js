@@ -28,6 +28,13 @@ const square = x => {
 
 console.log(square(5));   //25
 
+{
+    // curly braces optional for singile line statement
+    let square = num => num*num;
+
+    console.log(square(9));
+}
+
 
 //Arrow  function with two parameter
 const recArea = (l,b) => {

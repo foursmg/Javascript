@@ -144,26 +144,40 @@ const newArr1 = myArr.flatMap(x => [x, x * 10]);
 console.log(newArr1);
 
 console.log("");
-console.log("------------splice(): Romve elememts from array __________");
-// splice()
-//  The splice() method can be used to add new items to an array
-let bikes = ["apache",'tracker 400','390R',"CB650R"];
-console.log(bikes);
-bikes.splice(1,2);
-console.log(bikes);
+{
+console.log("------------splice() __________");
+/*
+splice()
+Splice() is used to add, remove, or replace element in an array. 
+*It modifies the original Array.
+Syntax:  arr.splice(start, deleteCunt, item1, item2,.....)
+                    start -> Index where change begin
+                    deleteCount -> Number of elements to remove.
+                    item1, item2, .....  -> Elements to insert(Optinal).
 
-const fruits = ["Banana", "Orange", "Apple", "Mango"];
-fruits.splice(2, 0, "Lemon", "Kiwi");
-console.log(fruits);  //(6) ['Banana', 'Orange', 'Lemon', 'Kiwi', 'Apple', 'Mango']
-// splice() to Remove Elements
-// With clever parameter setting, you can use splice() to remove elements without leaving "holes" in the array
-fruits.splice(0, 1);
-console.log(fruits); // (5) ['Orange', 'Lemon', 'Kiwi', 'Apple', 'Mango']
+*/
+console.log("--splice(start, deleteCount): Remove Element--------------");
+
+let arrAnimal = ["Rabbit","cheetah","Monkey","Yak","lion"];
+
+console.log(arrAnimal);  // (5) ['Rabbit', 'cheetah', 'Monkey', 'Yak', 'lion']
+arrAnimal.splice(1,3);  // this will remove 3 element from index 1,  
+console.log(arrAnimal); // ['Rabbit', 'lion']
+
+console.log("--splice(): Add Elements----------------------------------");
+
+let arrBird = ["Sparrow","Crow","Parrot","Peacock"];
+arrBird.splice(2,0,"Eagle","Owl","Duck");
+console.log(arrBird);  // ['Sparrow', 'Crow', 'Eagle', 'Owl', 'Duck', 'Parrot', 'Peacock']
+
+
+}
+
 
 //slice()
 // The slice() method slices out a piece of an array into a new array
-const citrus = fruits.slice(1);
-console.log(citrus); // ['Lemon', 'Kiwi', 'Apple', 'Mango']
+//const citrus = fruits.slice(1);
+//console.log(citrus); // ['Lemon', 'Kiwi', 'Apple', 'Mango']
 //The slice() method creates a new array.
 //The slice() method does not remove any elements from the source array.
 //The slice() method can take two arguments like slice(1, 3).
