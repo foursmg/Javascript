@@ -1,36 +1,23 @@
+// let alarm = function(){
+//     console.log("Its 6 am, Wake up");
+// }
 
-// Object example.
+// setTimeout(alarm,4000);
+// console.log("Its 7am");
 
-let student = {
-    name: 'Kelly',
-    age: 32,
-    course: "MS",
-};
+// //-------------------
 
-console.log(student);
+//passing an anonymous function
 
+// setTimeout(function(){console.log(123);}, 4000);
+// console.log(456);
 
-// Converting object into string
-let jsonData = JSON.stringify(student);
+// SetInterval
 
-console.log(jsonData);
+// let morning = () => console.log("Wake Up");
+// setInterval(morning,1000);
 
-// Storing the string on local storage
-localStorage.setItem("studentfirst",jsonData);
-
-let stud = localStorage.getItem("studentfirst");
-console.log(stud);
-
-let kelly = JSON.parse(stud);
-
-console.log(kelly);
-
-console.log("----------------------------------");
-
-
-
-localStorage.setItem("Pin",87638);
-
-let num = localStorage.getItem("Pin");
-console.log(num);
-console.log(typeof(num));
+let train = () => console.log("Hurry up, Train has Arrived.");
+// setInterval(train, 1000);
+// let timerId = setInterval(train, 1000);
+// clearInterval(timerId);

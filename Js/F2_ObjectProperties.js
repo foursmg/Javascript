@@ -143,3 +143,26 @@ nums2.push(89);
 
 console.log(nums1);  //[11, 22, 33, 44]
 console.log(nums2);  // [11, 22, 33, 44, 89]
+
+
+console.log("=====================================");
+
+let student= {
+    name: "Saroj",
+    age: 28,
+    greet: function(){
+        console.log("Hii, my name is "+this.name);
+    }
+};
+
+student.greet();  // Hii, my name is Saroj
+
+// Object.keys() -> returns all the key in Object;   Returns Object
+console.log(Object.keys(student));  // ['name', 'age','greet']
+
+
+//Object.values() -> returns all the values of keys;   Returns Object
+console.log(Object.values(student));   // ['Saroj', 28, ƒ]
+
+//Objetc.entries()  -> retrun all The entries inside the object;   -> Returns Objects
+console.log(Object.entries(student));  // (3) [Array(2), Array(2), Array(2)]

@@ -102,3 +102,103 @@ items.forEach(item=>{
 
 
 //---------------------------------------------------
+
+
+/*
+
+// Normal Function
+function greet(){
+    console.log("Hello");;
+}
+
+greet();
+
+// Anonymous Function
+let morning = function(){
+    console.log("Good Morning");
+}
+morning();
+
+// Arrow Function, No parameter
+
+let hello = () => {
+    console.log("Hello EveryOne");
+}
+
+hello();
+
+// Arrow Function, No curly braces, In case of single statement, curly braces can be ignored.
+let hi = () => console.log("Hii Kelly");
+
+hi();
+
+//Arrow function with 1 parameter
+
+let cube = x => x*x*x;
+console.log(cube(5));
+
+let greeting = name => "Hello "+name;
+console.log(greeting("Ram"));
+
+// Arrow function with two parameter
+
+let sum = (a,b) => a+b;
+console.log(sum(5,3));
+
+
+// forEach Loop
+
+let arr = [1,2,3,4,5,6];
+
+
+
+// Using Traditional for loop
+for(let i=0;i<arr.length;i++){
+    console.log(arr[i]);  
+}
+
+//Using for Each Loop
+arr.forEach(function(num){
+    console.log(num+"-");
+});
+
+
+// Using forEach Loop, sorter version
+arr.forEach(num =>{
+    console.log(num*num);
+});
+
+
+// forEach  can be also written like this in case of single statement
+arr.forEach(num => console.log(num+5));
+
+// Access Index in forEach Loop
+let fruits = ["Apple","Banana","Kiwi","Ananas"];
+fruits.forEach((fruit,index)=> console.log(index+" "+fruit));
+
+// Sum of Array
+let nums = [1,2,3,4,5];
+let mySum=0;
+nums.forEach(num=>{
+    mySum = mySum + num;
+});
+console.log(mySum);   // 15
+
+
+
+// forEach loop and Array with objects
+
+products = [
+    {name: "shirt", price :649},
+    {name: "pant", price:712},
+    {name: "saree", price:2036},
+    {name:"socks", price: 355}
+];
+
+products.forEach(product =>{
+    console.log("Product: "+product.name+" - Price: "+product.price);
+});
+
+
+
+*/

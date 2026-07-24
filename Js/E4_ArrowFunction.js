@@ -80,5 +80,12 @@ const person = {
 
 person.greet();  //john
 
-// Dont use Arrow function for 'this' thing
+/*
+
+Note: Arrow functions do not have their own this. They inherit this from surrounding scope, so this is not the student object.
+Use a normal function when an object method needs this.
+
+*/
+
+
 

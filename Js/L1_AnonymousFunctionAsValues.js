@@ -32,6 +32,7 @@ console.log(sum(2,9));      //11
 
 console.log(typeof(sum));   // function
 
+
 // 3. Stored in an Object; Anonyous function can be properties in objects.
 
 let person = {
