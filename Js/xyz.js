@@ -1,23 +1,69 @@
-// let alarm = function(){
-//     console.log("Its 6 am, Wake up");
-// }
+// Reduce()
+// The reduce() method in JavaScript is used to reduce an array to a single value by applying a function to each element.
+// The final result can be:
+//          A number (sum,product,max,min)
+//          A string
+//          An object
+//          An array
+//          Any other value
 
-// setTimeout(alarm,4000);
-// console.log("Its 7am");
+// Syntax:
+// array.reduce((accumulator, currentValue, index, array) => {
+//     return updatedAccumulator;
+// }, initialValue);
 
-// //-------------------
+// Example 1. Sum of Numbers in the array-------
 
-//passing an anonymous function
+const arr = [1,2,3,4,5];
 
-// setTimeout(function(){console.log(123);}, 4000);
-// console.log(456);
+// Normally we would do this
 
-// SetInterval
+function sum(nums){
+    let sum = 0;
+    for(let i=0;i<arr.length;i++){
+        sum = sum + arr[i];
+    }
+    return sum;
+}
 
-// let morning = () => console.log("Wake Up");
-// setInterval(morning,1000);
+console.log(sum(arr)); // 15
 
-let train = () => console.log("Hurry up, Train has Arrived.");
-// setInterval(train, 1000);
-// let timerId = setInterval(train, 1000);
-// clearInterval(timerId);
+// Same thing using reduce()
+
+let output = arr.reduce((acc,curr)=>{
+    acc= acc + curr;
+    return acc;
+},0);   // this 0 here is initializing acc with 0, i.e.  acc=0;
+
+console.log(output);   // 15
+
+
+
+
+// Example 2. Biggest element
+const nums = [5,2,8,3,6];
+
+// How we would do it normally
+function findMax(nums){
+    let max=0;
+    for(let i=0;i<nums.length;i++){
+        if(nums[i]>max){
+            max= nums[i];
+        }
+    }
+    return max;
+}
+
+console.log(findMax(nums));  // 8
+
+
+// using method function
+
+const myOutput = nums.reduce(function(max,curr){
+    if(curr>max){
+        max= curr;
+    }
+    return max;
+},0);
+
+console.log(myOutput);  //8
