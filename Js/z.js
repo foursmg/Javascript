@@ -1,43 +1,46 @@
-console.warn("This is a custom warning");
-console.error("This is a custom error");
-console.log(2+4);
+let nums = [7,2,3,4,5,6,87,3,2,1];
 
-
-//Object
-let person = {
-    fname: "John",
-    lname: "Doe",
+// 
+let arraySum = function(arr){
+    let sum = 0;
+    for(let i=0;i<arr.length;i++){
+        sum = sum+ arr[i];
+    }
+    return sum;
 }
 
-console.log(person);
+let sum = arraySum(nums);
 
+console.log(sum);
 
+// USing reduce()
 
-let person2 = person;
+let mySum = nums.reduce((acc,curr)=>{
+    acc = acc + curr;
+    return acc;
+},0);
 
-console.log(person2);
+console.log(mySum);
 
-
-person2.fullName = function(){
-    return this.fname + this.lname;
+//
+function largest(arr){
+    let n = 0;
+    for(let i=0;i<arr.length;i++){
+        if(n<arr[i]){
+            n= arr[i];
+        }
+    }
+    return n;
 }
 
-
-console.log(person2);
-
-let fullname = person2.fullName();
-console.log(fullname);
+console.log(largest(nums));
 
 
-console.log("------------------");
-
-let score = {
-    round: 12,
-    win: 5,
-    tie:2,
-    lost:5,
-}
-
-console.log(score);
-
-localStorage.setItem("Score",JSON.stringify(score));
+// Using reduce()
+let biggest = nums.reduce((max,curr)=>{
+    if(max<curr){
+        max=curr;
+    }
+    return max;
+},0);
+console.log(biggest);

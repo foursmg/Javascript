@@ -1,3 +1,7 @@
+// JavaScript is synchronus single-threaded language.
+// Everything in javascript happens inside an Execution Context.
+
+
 //Varibales
 
 // 'var' and 'let' Keyword is used to declare variables
