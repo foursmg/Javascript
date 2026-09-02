@@ -78,6 +78,27 @@ console.table(employee);
 
 
 
+//---------------------------------------------------------------------------------------------------
+/*
+
+            UNDEFINED vs NOT DEFINED 
+
+undefined is a built-in value that means a varibale has been declared but has not yet been assigned a value, whereas "Not defined" is a runtime error (ReferenceError)
+that means the varibale does not exist in the current scope at all.
+
+                UNDEFINED                                        NOT DEFINED
+    A primitive data type and a specific                A ReferenceErrorexception thrown by the engine.
+    value.                                                      
+
+    Memory space is allocated for the varibale.         No memory space has been allocated.
+
+    The varibale has been declared                      The varibale has never been declared anywhere in the scope.
+    (Using var, let or const).
+
+    Code execution continues smoothly.                  Code execution halts immediately unless handled.
+
+*/
+
 
 
 

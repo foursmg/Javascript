@@ -90,11 +90,14 @@ console.log("----------------------------------------");
 //                val = null;
 
 //In above both the cases:
-// and when that val is contverted into number using: parseInt(val) 
+// and when that val is contverted into number using: parseInt(val)  
 //                                              i.e.: let num1 = parseInt(val); 
-//                                        it returns: num1 = NaN
+//                                        it returns: num1 = NaN  (In case ok/cancel is entered without typing any value in input)
+//                                                           NaN  (also in case String is entered)
 
 //and if val is converted into number using Number(): Number(val)
+//                                                  Case 1 : In case ok or cancel is pressed without entering anything -> 0
 //                                              i.e.: let num2 = Number(val);
 //                                        it returns: 0   
+//                                                  Case 2 : String is entered -> NaN
 

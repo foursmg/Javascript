@@ -1,4 +1,8 @@
 // JavaScript is synchronus single-threaded language.
+// Single-threaded: JavaScript has one main call stack, so it can execute one piece of Js code at a time.
+// It Executes in order.
+// Synchronus: Synchrouns means the next statement generally waits for the current statement to finish
+
 // Everything in javascript happens inside an Execution Context.
 
 
@@ -139,7 +143,7 @@ console.log(xvalue);
 //let xvalue = 43; //error, cannot be redclared
 xvalue = "Delhi"; //but value can be reassigend
 console.log(xvalue);
-//let cannot be redeclared inside block but can be redeclared inside another block;
+//let cannot be redeclared inside block but can be redeclared, outside that block or inside another block;
 {
     let ID= 234;
     //let ID= 324; //not allowed  here
@@ -148,8 +152,7 @@ console.log(xvalue);
     let ID = 567; // redeclared inside another block
 }
 
-// Can be Redeclared - using var , const can be also redeclared
-// even declared var inside block can be redecalred outside the block
+// var can be redeclared again within same scope or outside scope, or in different scope
 var yvalue = 45;
 console.log(yvalue);
 var yvalue = "Jaipur";
@@ -157,6 +160,8 @@ console.log(yvalue);
 //inside block
 {
     var pincode = 654234;
+    console.log(pincode);
+    var pincode = 2323232;
     console.log(pincode);
 }
 var pincode = 479246;

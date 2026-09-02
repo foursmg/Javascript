@@ -178,7 +178,7 @@ console.log("Less than or equal to: 2 <= 2 is", 2 <= 2);
 //String Comparison
 let text1 = "A";
 let text2 = "B";
-let result = text1< text2; // true, Strings are compare alphabetically 
+let result = text1< text2; // true, Strings are comparable alphabetically 
 console.log(result);
 
 let Num1= 34;
