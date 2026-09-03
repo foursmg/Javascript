@@ -47,6 +47,11 @@ console.log(quote);
 //Varibale names cannot be keywords.
 
 
+// Variable can declared without the use of var, const, let also.
+cityName = "Jaipur"
+console.log(cityName); //Jaipur
+
+
 //Constants
 // const cannot be Redeclared, const cannot be Reassigned, const have Block Scope
 //A constant is a type of variable whose value cannot be changed.

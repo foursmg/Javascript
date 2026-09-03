@@ -1,6 +1,9 @@
 // Data Type - Different kinds of value we can use in Js
 // 8 Basic types
 
+
+// Primitive data type
+
 // String - Represent textual Data, Contains a sequence of characters
 // surrounded by Single quotes '', Double quotes " ", Backticks ` `
 let name = "Aditya";
@@ -40,7 +43,7 @@ var bool = true;
 console.log(bool);
 
 
-//undefined
+//undefined                          // typeof undefined gives undefined
 //undefined represents the absense of a value.
 //If a variable is declared but the value is not assigned, then the value of that variable will be undefined.
 var xyz;
@@ -50,7 +53,7 @@ var abc = undefined;
 console.log(abc);  ///undefined
 //avoid explicitly assigning undefined to a variable. Usually, we assign null to variables to indicate "unknown" or "empty" values.
 
-//null
+//null                                     // typeof null gives Object
 //null represents "no value" or "nothing". 
 let var1 = null;
 console.log(var1);
@@ -65,8 +68,61 @@ console.log(value1===value2);   //false
 // though both value1 and value2 contain 'Apple' Js treats them different since they are of Symbol type
 
 
+
+
+
+//--------
+
+
+// Reference data type 
+// Refernce data types are types that store a reference( memory address) to the actual value rather than the value itself.
+// Types: Object, Array, Function, Date, Amp, Set, Any custom object created classes or construcors
+
+
 //Object
 //An Object holds data in the form of key-value pairs.
+
+//Example 1 - Object
+let person1 = { name: "Aman" };
+let person2 = person1;
+
+person2.name = "Amit";
+console.log(person1.name);  // Amit
+console.log(person2.name);  // Amit
+//Reason : person1 and person2 point to the same object in memory.
+// Changing the Object through one varibale affects the other
+
+console.log(typeof(person1));  //object
+
+
+//Example 2 - Array
+let arr1 = [1, 2, 3];
+let arr2 = arr1;
+
+arr2.push(4);
+
+console.log(arr1); // [1, 2, 3, 4]
+console.log(arr2); // [1, 2, 3, 4]
+// Arrays are copied by reference.
+
+console.log(typeof(arr1));   // Object
+
+//In case of primitives below - Primitives are copied by value.
+let x = 23;
+let y = x;
+y=1;
+console.log(x);   //23
+console.log(y);   //1
+
+
+function hello(){
+    console.log("Hello Everyone");
+}
+hello();  // Hello Everyone
+console.log(typeof(hello));  // function
+
+
+//Example 
 let employee ={
     fname: "Samanth",
     lname: "Singh",
@@ -75,6 +131,16 @@ let employee ={
 console.log(employee);
 //for table view
 console.table(employee);
+
+
+// Comparing Reference Types
+let student1 = {name: "Kelly"};
+let student2 = {name: "Kelly"};
+
+console.log(student1===student2);  // False  -> Content same but different object in memeory
+console.log(student1.name===student2.name);  // true
+console.log(student1.name==student2.name);  // true
+
 
 
 
