@@ -40,6 +40,7 @@ info.country = "England";
 console.log(info);  //{fname: 'Steve', lname: 'Smith', empId: 432, city: 'London', country: 'England'}
 
 
+
 console.log("=================================");
 
 
@@ -65,6 +66,44 @@ console.log(result); // false, country doesn't exists in info object
 
 
 console.log("--------------------------------------");
+
+// Adding Symbol to Object.
+
+// Gets addes with Symbol(...)  wrapper
+console.log(info);  // {fname: 'Steve', lname: 'Smith', empId: 432}
+const town = Symbol("Kanpur");
+info.city = town;
+console.log(info)   // {fname: 'Steve', lname: 'Smith', empId: 432, city: Symbol(Kanpur)}
+
+// Gets added as String
+
+const interest = Symbol("Swimming");
+info.hobby = interest.description;
+console.log(info);   // {fname: 'Steve', lname: 'Smith', empId: 432, city: Symbol(Kanpur), hobby: 'Swimming'}
+
+// Gets added with Symbol key
+let status = Symbol("Married");
+
+
+// Storing and accessing String Key-Value pair in object
+let student1 = {
+    fname: "Aron",
+    lname: "Paul",
+    "fullName" : "Aron Paul"
+}
+
+console.log(student1);   //{fname: 'Aron', lname: 'Paul', fullName: 'Aron Paul'}
+
+console.log(student1.fullName); // Aron Paul
+console.log(student1["fullName"]);    // Aron Paul
+
+// Object Freez
+Object.freeze(student1);   // This will prevent object key and vallues from changing
+student1.fname = "James";
+console.log(student1);   // {fname: 'Aron', lname: 'Paul', fullName: 'Aron Paul'}
+
+
+console.log("======================================");
 
 
 // nested object
@@ -166,3 +205,32 @@ console.log(Object.values(student));   // ['Saroj', 28, ƒ]
 
 //Objetc.entries()  -> retrun all The entries inside the object;   -> Returns Objects
 console.log(Object.entries(student));  // (3) [Array(2), Array(2), Array(2)]
+
+
+
+console.log("---------------------------------");
+// Merging two Object  
+
+// Using Spread Syntax ...
+
+let individual = {
+    fname: "Steve",
+    age : 25
+};
+
+let employee = {
+    empId : 432,
+    department: "IT",
+    age :30            // In case of same property in different object - The later object's value overwrites the earlier one
+};
+
+let myObject = {
+    ...individual,...employee
+}; 
+
+console.log(myObject);  // {fname: 'Steve', age: 30, empId: 432, department: 'IT'}
+
+
+// hasOwnProperty() checks if a particular property exits in object
+console.log(myObject.hasOwnProperty('empId'));  // true
+console.log(myObject.hasOwnProperty('city'));   // false
