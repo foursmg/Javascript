@@ -37,6 +37,8 @@ let name1 = "john";   //String primitive
 let name2 = "john";   //Also a String Primitive  
 let name3 = new String("john");   //String Object
 
+
+
 //primitives are compared by values
 console.log(name1==name2);  //true,  Both are primitive strings with same value
 console.log(name1 === name2); //true,  === check (i) Same Type?, (ii) Same value?; here both string and value john same -> true
@@ -52,5 +54,12 @@ let name4 = new String("john");
 console.log(name3==name4);   //false, compares Object references
 console.log(name3===name4);  //false, Also checks reference identity
 
+console.log("------------------------------------------");
 
-                            
+let myStr = new String("My Coffee is cold");
+
+console.log(myStr); //String {'My Coffee is cold'}
+console.log(myStr[0]);  // M
+console.log(myStr[1]);  // y
+
+

@@ -16,9 +16,9 @@ const specificD= new Date("2025-05-21");
 console.log(specificD);
 //Using Numbers
 const specificD2 = new Date(2024,5,22);
-console.log(specificD2);
+console.log(specificD2.toLocaleString());  // 6/22/2024, 12:00:00 AM
 const specificD3 = new Date("October 13, 2014 11:13:00");
-console.log(specificD3);
+console.log(specificD3.toLocaleString());  // 10/13/2014, 11:13:00 AM
 
 // Choosen month 5 but month in output console -> june
 // Because months are zero-indexed in JS:
@@ -28,7 +28,17 @@ console.log(specificD3);
 
 console.log("--------------------");
 
+let myDate = new Date();
 
+console.log(myDate); //Sat Sep 05 2026 23:24:06 GMT+0530 (India Standard Time) 
+console.log(myDate.toString());// Sat Sep 05 2026 23:23:42 GMT+0530 (India Standard Time)
+console.log(myDate.toDateString());   // Sat Sep 05 2026
+console.log(myDate.toLocaleDateString());   //9/5/2026
+
+
+
+
+console.log("-------------------------------");
 
 
 {

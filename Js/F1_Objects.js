@@ -2,7 +2,7 @@
 //An Object is a collection of key-value pairs used to store data
 //Objects are varibales that can store values and funcions.
 //Values are stored as Key:value pairs called properties.
-//Function are stored as key:function() paris called methods.
+//Function are stored as key:function() pairs called methods.
 
 const car = {
     type: "Fiat",

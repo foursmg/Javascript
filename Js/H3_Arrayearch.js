@@ -1,7 +1,7 @@
 // indexOf()
-// The indexOf() method searches an array for an element value and returns its position.
+// The indexOf() method searches an array for an element(first match) value and returns its position.
 
-const fruits = ["Apple","Guava","Mango","Ananas","Kiwi"];
+const fruits = ["Apple","Guava","Mango","Apple","Ananas","Kiwi"];
 
 console.log(fruits.indexOf("Apple"));  //0
 console.log("Position: "+(fruits.indexOf("Kiwi")+1)); // Position: 5

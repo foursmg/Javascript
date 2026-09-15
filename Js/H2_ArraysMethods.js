@@ -145,12 +145,13 @@ console.log(newArr1);
 
 console.log("");
 {
+    
 console.log("------------splice() __________");
 /*
 splice()
 Splice() is used to add, remove, or replace element in an array. 
 *It modifies the original Array.
-Syntax:  arr.splice(start, deleteCunt, item1, item2,.....)
+Syntax:  arr.splice(start, deleteCount, item1, item2,.....)
                     start -> Index where change begin
                     deleteCount -> Number of elements to remove.
                     item1, item2, .....  -> Elements to insert(Optinal).

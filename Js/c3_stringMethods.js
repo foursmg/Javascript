@@ -11,12 +11,12 @@ console.log(fruit.length); //23
 //2. toUpperCase - Converts to uppercase
 console.log(fruit.toUpperCase());   //MANGO IS A SUMMER FRUIT
 
-//3. ToLowerCase()
+//3. toLowerCase()
 console.log(fruit.toLowerCase());
 
 //4. trim() - Removes spaces from start to end, But doesn't removes space from middle
 let str = "   Apple   Banana   ";
-console.log(str.trim());
+console.log(str.trim());  //Apple   Banana
 
 //5. includes() - checks if substring exists. Case Sensitive
 console.log(fruit.includes("ummer"));  //true
@@ -38,6 +38,12 @@ console.log(fruit.slice(6,17)); // is a Summer
 console.log(fruit.slice(6)); //is a summer fruit
 //if parameter negative - Position is counted from the end of the String 
 console.log(fruit.slice(-6));  //Fruit
+console.log(fruit.slice(-1));  // .
+
+console.log(fruit.slice(-7,2)); // NO OUTPUT!!!
+// slice() moves from left to right only. It does not move backwards.
+
+console.log(fruit.slice(-13,17));  //Summer
 
 //9. subString() - Similar to Slice - Slice Preferred.
 
@@ -114,4 +120,8 @@ charCodeAt(i)        UTF-16 code at index                                 "A".ch
 */
 
 
-
+//--------------
+let name = "Shaurya";
+console.log("name".__proto__);
+console.log("".__proto__); 
+// This dot proto gives list of all the string methods, check it on console

@@ -17,10 +17,10 @@ console.log("_____________Array____________");
 let arr = [1,2.32,34,5,"delhi",7,70];
 console.log(arr); //displaying an array
 arr[0] = 222; // changing an array
-console.log(arr);
+console.log(arr); // (7) [222, 2.32, 34, 5, 'delhi', 7, 70]
 arr[7] = 32;    //Adding an element using index number
-console.log(arr);
-console.log(arr[7]);
+console.log(arr);    // (8) [222, 2.32, 34, 5, 'delhi', 7, 70, 32]
+console.log(arr[7]);   // 32
 console.log(arr[8]);  //undefined
 console.log(typeof(arr));   //object // Type Of Array is Object
 
@@ -52,6 +52,7 @@ console.log("Arrays With different Data types: "+arr1);  // (8) 'Rose', 30, 'Bi
 
 console.log("----------------(Accessing Array Elements)--------------------");
 
+console.log(cars);     // (6) ['Volvo', 'Honda', 'Toyota', 'Kia', 'Ford', 'Hyundai']
 console.log(cars[0]);  //Volvo  //Accessing 1st element with index 0
 console.log(cars[cars.length-1]); // Hyundai // Accessing last element with .length-1
 console.log(cars[3]); //Kia
@@ -64,7 +65,7 @@ console.log(cars);  //(6) ['Renault', 'Honda', 'Toyota', 'Kia', 'Ford', 'Hyundai
 
 console.log("--------(Adding Array Elements)----------------");
 
-//Adding ne element to an array using push() method
+//Adding one element to an array using push() method
 cars.push("Tata"); //psuh method add elements to the end of array
 console.log(cars);  //(7) ['Renault', 'Honda', 'Toyota', 'Kia', 'Ford', 'Hyundai', 'Tata']
 
@@ -104,6 +105,25 @@ const person = {
 }
 console.log(person);  //{name: 'Kalyan', city: 'Lucknow', age: 54}
 console.log(person.name);  //kalyan
+
+
+
+console.log("-----------------(Creating a copy of Array)--------------------------------------");
+
+let myarr1 = [22,33,44,77];
+let myarr2 = [...myarr1];   
+
+console.log(myarr1);    // (4) [22, 33, 44, 77]
+console.log(myarr2);    // (4) [22, 33, 44, 77]
+
+myarr2[0] = 101;
+
+console.log(myarr1);   // [22, 33, 44, 77]
+console.log(myarr2);   // [101, 33, 44, 77]
+
+// chaning element of one array doesn't affect the elements of other array
+
+
 
 console.log("-----------------(Looping Array Elements)----------------")
 
@@ -155,5 +175,8 @@ console.log(myObj.cars[0].models[1]); //focus
 
 
 
-
+let myStr = "abcdef";
+for(let i=0;i<myStr.length;i++){
+    console.log(myStr.toString());
+}
 

@@ -143,6 +143,15 @@ console.log(student1.name==student2.name);  // true
 
 
 
+// Stack : Stores primitive values and references, Fast access, Automatically managed, Uses LIFO (Last In, First Out) for function calls
+// Heap  : Stores Objects and arrays, Slower than stack access, Managed by JavaScript's garbage collector, Dynamic memeory allocation
+
+
+
+
+
+
+
 
 //---------------------------------------------------------------------------------------------------
 /*

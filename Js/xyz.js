@@ -1,5 +1,13 @@
-// let resultt = Number("5");
-// console.log(resultt+ " - " + typeof(resultt));
+let info = {
+    name: "Kelly",
+    age: 54,
+    city:"kanpur"
+}
 
-let resultt = String(potato);
-console.log(resultt+ " - " + typeof(resultt));
+let {name,age} = info;
+console.log(name);
+console.log(age);
+
+let {name: PName , age:PAge, country ="India"} = info;
+console.log(PName);
+console.log(country);
