@@ -96,4 +96,38 @@ if (Number.isNaN(x)) {
 }
 
 
+
+.isNaN() - The Global Function
+The global isNaN() function checks if a value is functionally "Not-aNumber" in a mathematical contex.
+- It first coerces(converts) the value into a number, and then checks if the resulting value is NaN.
+
+// Expected behaviors
+isNaN(NaN);       // true
+isNaN("hello");   // true (strings that can't be parsed become NaN)
+
+// Surprising behaviors due to type coercion
+isNaN("123");     // false (coerced to the number 123)
+isNaN("");        // false (empty strings are coerced to 0)
+isNaN(true);      // false (true is coerced to 1)
+isNaN(null);      // false (null is coerced to 0)
+
+
+
+
+
+Number.isNaN() Method - Provides a much more robust and predictable check.
+- It does not force-convert the value to a number.
+
+Number.isNaN(NaN);       // true
+Number.isNaN(0 / 0);     // true
+
+// No coercion occurs
+Number.isNaN("hello");   // false (it's a string, not the number value NaN)
+Number.isNaN(undefined); // false
+
+
+
+
+
+
 */

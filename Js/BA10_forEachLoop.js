@@ -19,7 +19,7 @@ arr.forEach(function(nums){
 arr.forEach((num)=> console.log(num+" #"));
 
 
-// Using return in forEach loop is similar to  continue in tradistional loops.
+// Using return in forEach loop is similar to  continue in traditional loops.
 // Not straightforword to break out of a forEach loop.
 // When you need to perform an anction on each array element and don't need to break early.
 

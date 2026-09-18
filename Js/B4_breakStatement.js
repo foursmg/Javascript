@@ -40,3 +40,16 @@ while(true){
 console.log("Sum of Positive Numbers Entered: "+sum);
 
 console.log("----------------------------------------");
+// -----------------------------------------
+// let sum =0;
+// while(true){
+//     let num = (prompt("Enter a Number: "));
+//     let myNum = Number(num.trim());
+//     console.log(myNum);
+//     if(myNum>=0){
+//         sum = sum + myNum;
+//     }else if(myNum<0){
+//         console.log("Sum of positive numbers Entered: "+sum);
+//         break;
+//     }
+// }

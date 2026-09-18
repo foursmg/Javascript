@@ -63,6 +63,7 @@ console.log(var1);
 //When we create a Symbol, JavaScript guarantees that it is distinct from all other symbols, even if they have the same descriptions
 let value1 = Symbol("Apple");
 let value2 = Symbol("Apple");
+console.log(value1==value2);   //false
 console.log(value1===value2);   //false
 // === compares the value of value1 and value2. -> It returns 'true' if the two values are exactly the same, otherwise false
 // though both value1 and value2 contain 'Apple' Js treats them different since they are of Symbol type

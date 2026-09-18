@@ -63,3 +63,7 @@ let fruit = ["Apple","Banana","Kiwi","Mango"];
 for(let x in fruit){
     console.log(x);    //it will only print the index i.e. 0,1,2,3,4..... not values, because array indexes are keys
 }
+
+for(let x in fruit){
+    console.log(x+" - "+ fruit[x]);   // x will print index, fruit[x] will print element name
+}

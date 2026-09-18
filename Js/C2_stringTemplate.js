@@ -28,5 +28,5 @@ Open your mouth
 
 console.log("-------(String Concatenation)------------")
 
-console.log("hello "+1+1+1+" world") // When String is involeved. + becomes String concatenation
-console.log("Hello "+(1+1+1)+" World.")  // Here Parentheses forces arithmetic firt
+console.log("hello "+1+1+1+" world") //hello 111 world     // When String is involeved. + becomes String concatenation
+console.log("Hello "+(1+1+1)+" World.")//hello 3 world     // Here Parentheses forces arithmetic firt

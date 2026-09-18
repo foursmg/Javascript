@@ -5,6 +5,12 @@ let result;
 // integer + boolean = integer
 // integer + null = integer 
 
+console.log(7 + "abc");   // 7abc
+console.log(8+true);      // 9
+console.log(12+null);     // 12
+
+
+
 // convert number to string
 result = "3" + 2; 
 console.log(result, "-", typeof(result)); // 32 - string

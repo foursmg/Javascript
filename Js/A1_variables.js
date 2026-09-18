@@ -182,6 +182,38 @@ let and const are not hoisted.
 
 
 
+// let and const doesn't bind to this -------------------
+var x = 10;
+let y = 20;
+const z = 30;
+
+console.log(this.x); // 10
+console.log(this.y); // undefined
+console.log(this.z); // undefined
+
+In a browser's global scope
+var x = 10
+   ↓
+window.x
+   ↓
+this.x
+
+---BUT---
+
+let y = 20
+const z = 30
+
+   ↓
+stored in the global lexical environment
+   ↓
+NOT properties of window/this
+--------------------------------------------------
+
+
+
+
+
+
 
 */ 
 
