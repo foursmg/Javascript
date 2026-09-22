@@ -75,13 +75,43 @@ console.log("---------------------------------");
 // Arguments are the REAL VALUES Passed to, and Received By the function.
 
 
+
+
+
+
 //***Default Parameter Values
 //In Js function can have default values, The default value is used if no argument is provided.
 function add(a,b=10){  //default value of b only be used when b argument is not provided by calling function
     return a+b;
 }
-console.log(add(2)); //12
 console.log(add(3,4));  //7 
+console.log(add(2)); //12  -  This works because Js assigns arguments from left to right.
+
+// This won't work - because argumnets are assigned from left to right
+
+//  function sum(a=12,b){
+//         return a+b;
+//  }
+//  console.log(sum(2));   // NaN
+
+// in above case a=2,b=undefined, a=12 doesn't get used, because 2 gets used as value for a.
+// Hence 2+undefined -> NaN
+
+//A way to make the above code work is to pass undefined 
+
+function sum(a=12,b){
+    return a+b;
+}
+console.log(sum(undefined,3));   // 15
+
+
+
+
+
+
+
+
+
 
 
 // Function without return will be undefined
@@ -125,6 +155,8 @@ console.log("Factorial of 5: "+ factorial(5)); //120
 console.log("-------------------------------------");
 
 
+// arguments object - arguments is JavaScript's special way of accessing all the arguments passed to a regular function, even when you haven't defined parameters.
+// arguments work in regular function, it doesn't work same way in arrow functions.
 //find max function
 
 let x = findmax(23,5,21,324,75,2,5); //function call + Passing values inside(), returned value gets stored in var x
@@ -143,6 +175,9 @@ function findmax(){   // there are no named parameters like (a,b), instead it us
 }
 
 console.log(x);  //324
+
+
+// preferred way to accept an unknown number of values is usually the rest parameter.
 
 /*
 Inside a Normal Fucntion, Js automatically Provides: arguments
@@ -198,7 +233,9 @@ function sumAll(){
 
 console.log("================================");
 
-// Function Rest Parameter
+
+
+// Function - Rest Parameter
 
 function functionNums(...nums){   // here nums will collect all the passed arg in an array
    console.log(nums); 
@@ -218,4 +255,47 @@ function summ(...args) {
 
 let xx = summ(4, 9, 16, 25, 29, 100, 66, 77);
 console.log(xx); //326
+
+
+
+
+// Normal function   vs    function with arguments object   vs   function with rest parameter
+
+//Normal function
+function sumNums(nums){
+    let i=0,sum=0;
+    while(i<nums.length){
+        sum = sum + nums[i];
+        i++;
+    }
+    return sum;
+}
+let nums = [1,2,3,4,5];
+console.log(sumNums(nums));   //15
+
+
+
+// arguments object function
+function sum(){
+    let i=0;
+    let sum =0;
+    while(i<arguments.length){
+        sum = sum + arguments[i];
+        i++;
+    }
+    return sum;
+}
+console.log(sum(1,3,5,7,9)); //25
+
+
+// rest parameter
+function addNums(...nums){
+    let i=0, sum=0;
+    while(i<nums.length){
+        sum += nums[i];
+        i++;
+    }
+    return sum;
+}
+console.log(addNums(1,2,3,4,5,6));  // 21
 

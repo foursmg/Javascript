@@ -56,10 +56,11 @@ console.log(helo);
 
 console.log("-----------------(function Overwrite)------------------")
 
-
+//When two function with same name get called
+//Js Function declaration is Hoisted.
 let myF1 = functionX();
-console.log(myF1);   //When two function with same name get called
-                     //Js Function declaration is Hoisted.
+console.log(myF1);       // Function Two-2
+                         // f2
 
 
 function functionX(){
@@ -73,8 +74,24 @@ function functionX(){
     return "f2";
 }
 
-//Java Doesn't two separate function with same name.
+//Js Doesn't separate two function with same name.
 //The second declaration Overwite the first one.
+
+
+
+// Js doesn't have  traditional function overloading like java.
+function add(a, b) {
+    return a + b;
+}
+
+function add(a, b, c) {
+    return a + b + c;
+}
+
+// Second add function will overwrite first one
+
+console.log(add(2, 3));  // NaN
+
 
 
 console.log("--------------------------------");

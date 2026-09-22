@@ -5,7 +5,7 @@ Key characteristics of JavaScript arrays are:
 Elements: An array is a list of values, known as elements.
 Ordered: Array elements are ordered based on their index.
 Zero indexed: The first element is at index 0, the second at index 1, and so on.
-DYNAMIC SIZE: Arrays can grow or shrink as elements are added or removed.
+DYNAMIC SIZE: JavaScript Arrays can grow or shrink as elements are added or removed.
 Heterogeneous: Arrays can store elements of different data types (numbers, strings, objects and other arrays).
 
 Syntax for creating an array
@@ -146,9 +146,21 @@ while(i<cars.length){
 console.log("");
 
 //for each loop
+let arr = [1,2,3,4,5,6];
+arr.forEach( (x) => console.log(x));
+
+
+//Using for of array
+// Example 1
 console.log("for-of Loop");
 for(let car of cars){
     console.log(car);
+}
+
+//Example 2
+let arr = [11,22,33,44,55,66];
+for(let x of arr){
+    console.log(x);
 }
 
 

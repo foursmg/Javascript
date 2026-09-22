@@ -8,23 +8,40 @@ let city = ["Jaipur","Puri","Itanagar","Gangtok","Rajgir"];
 console.log(city);          //(5) ['Jaipur', 'Puri', 'Itanagar', 'Gangtok', 'Rajgir']
 console.log(city.length);  //5
 
+
+
 console.log("");
 console.log("_______Array to String: arr.toString()________");
-//Array toString()
+
+//Array toString() - returns String
 //The toString() method returns the elements of an array as a comma separated string.
 //Every JavaScript object has a toString() method.
 //The toString() method is used internally by JavaScript when an object needs to be displayed as a text (like in HTML), or when an object needs to be used as a string.
 console.log(city.toString());  //Jaipur,Puri,Itanagar,Gangtok,Rajgir
 
 
+
+
+
 console.log("");
 console.log("------------- arr.sort(): Sorts the array------------ ");
+
 // Js compares numbers as String, the sort them alphabetically (lexicographically)
 let nums = [5,42,6,88,5,99,32,13,77,9];
 nums.sort();
 console.log(nums);  // (10) [13, 32, 42, 5, 5, 6, 77, 88, 9, 99]
 
+let arr = ["banana","carrot","Car","Toyota","Yak","Apple","ant","Box"];
+console.log(arr.sort()); // (8) ['Apple', 'Box', 'Car', 'Toyota', 'Yak', 'ant', 'banana', 'carrot']
+
+
+
+
+
 //ValueOf(): get array itself
+
+
+
 
 console.log("");
 console.log("-------Array at(): arr.at[]----------- ");
@@ -157,13 +174,16 @@ Syntax:  arr.splice(start, deleteCount, item1, item2,.....)
                     item1, item2, .....  -> Elements to insert(Optinal).
 
 */
+
+
 console.log("--splice(start, deleteCount): Remove Element--------------");
 
 let arrAnimal = ["Rabbit","cheetah","Monkey","Yak","lion"];
-
 console.log(arrAnimal);  // (5) ['Rabbit', 'cheetah', 'Monkey', 'Yak', 'lion']
 arrAnimal.splice(1,3);  // this will remove 3 element from index 1,  
 console.log(arrAnimal); // ['Rabbit', 'lion']
+
+
 
 console.log("--splice(): Add Elements----------------------------------");
 
@@ -180,7 +200,22 @@ console.log(arrBird);  // ['Sparrow', 'Crow', 'Eagle', 'Owl', 'Duck', 'Parrot', 
 //const citrus = fruits.slice(1);
 //console.log(citrus); // ['Lemon', 'Kiwi', 'Apple', 'Mango']
 //The slice() method creates a new array.
-//The slice() method does not remove any elements from the source array.
+//*** */ The slice() method does not remove any elements from the source array.
 //The slice() method can take two arguments like slice(1, 3).
 //The method then selects elements from the start argument, and up to (but not including) the end argument.
 
+//Syntax -> array.slic(start,end);   End is not included
+
+let animals = ["Elephant","Zebra","Lion","Seal","Tiger"];
+let myAnimals = arr.slice(1,3);
+console.log(animals);  //['Elephant', 'Zebra', 'Lion', 'Seal', 'Tiger']
+console.log(myAnimals); //['Zebra', 'Lion']
+
+// if end not specified
+console.log(animals.slice(1));  // (4) ['Zebra', 'Lion', 'Seal', 'Tiger']
+
+// Negative index
+console.log(animals.slice(-4,3));  // (2) ['Zebra', 'Lion']
+
+// Negative index no end value
+console.log(animals.slice(-4));   // (4) ['Zebra', 'Lion', 'Seal', 'Tiger']
