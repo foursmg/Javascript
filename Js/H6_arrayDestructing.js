@@ -23,3 +23,12 @@ let [f1,,,f4] = fruits;
 console.log(f1);  //mango
 //console.log(f2); // Error since f2 not defined
 console.log(console.log(f4)); //Ananas
+
+
+// Using ...rest operator
+let car = ["Tata","Toyota","Honda","Audi","BMW"];
+
+let [p,...vehicle] = car;
+console.log(p); // Tata
+console.log(vehicle);  // (4) ['Toyota', 'Honda', 'Audi', 'BMW']
+﻿

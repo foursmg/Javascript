@@ -29,7 +29,13 @@ console.log("--------------------------------");
 {
     let a = 34; let b = 43;
     console.log(a+b);
+
+
+    console.log(number); //231  -> Can access elements from outside the scope
 }
+
+//console.log(a);       //This is give error, can't access scope element out the scope
+
 
 console.log("============================================");
 
@@ -81,6 +87,7 @@ console.log(cars);    //Ford Honda Suzuki
 cars.push("Kia");     //add an element at the end
 console.log(cars);    //Ford Honda Suzuki Kia
 
+// Can also push(), pop(), shift(), Unshift() elements from const array.
 //cars = ["Volvo","Tota","Audi"];  //Cannot be reassigend - Error Produced.
 
 

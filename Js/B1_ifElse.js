@@ -61,6 +61,19 @@ let personName = 'John';
 console.log(personName|| 'Unknown');  //John
 personName = "";
 console.log(personName|| 'Unknown');  //Unknown
+let address;
+console.log(address||"Not filled");  // Not filled
+let pin = NaN;
+console.log(pin||null); // null  // can put string also i.e.-  (pin||"Not entered");
+let city = null;
+console.log(city||"Unknown");   // Unknown
+let loanStatus = undefined;
+console.log(loanStatus || "Not known");  // Not known
+
+let assignmentStatus = true;
+console.log(assignmentStatus||"Assignment Not submitted");  // true
+assignmentStatus = false;
+console.log(assignmentStatus||"Assignment Not submitted");   // Assignment Not submitted
 
 //!!!!!!
 //Random link on click

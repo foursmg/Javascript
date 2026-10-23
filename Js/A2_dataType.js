@@ -2,7 +2,9 @@
 // 8 Basic types
 
 
-// Primitive data type
+// Primitive data type   - Stored in Stack
+// Primitive data type is a basic data type that represent a single value and is not an object.
+// 7 primitive data types in Js : String, Number, BigInt, Boolean, Undefined, Null, Symbol
 
 // String - Represent textual Data, Contains a sequence of characters
 // surrounded by Single quotes '', Double quotes " ", Backticks ` `
@@ -25,6 +27,8 @@ console.log(n);
 //Exponential Notation
 let val = 123e5;    
 console.log(val);    //12300000
+let value = 123e-5;
+console.log(value); // 0.00123
 
 
 
@@ -75,7 +79,7 @@ console.log(value1===value2);   //false
 //--------
 
 
-// Reference data type 
+// Reference data type - Stored in Heap
 // Refernce data types are types that store a reference( memory address) to the actual value rather than the value itself.
 // Types: Object, Array, Function, Date, Amp, Set, Any custom object created classes or construcors
 

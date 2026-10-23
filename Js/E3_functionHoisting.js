@@ -7,6 +7,8 @@
 //Varibale Hoisting
 console.log(x);  //undefined
 var x=5;
+
+
 /*
 var x;  //hoisted
 console.log(x); // undefined
